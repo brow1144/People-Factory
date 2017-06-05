@@ -10,6 +10,8 @@ function handleSubmit(e) {
     document.body.style.backgroundColor = f.colorName.value;
 }
 
+//Test
+
 personForm.addEventListener('submit', handleSubmit)
 
 
