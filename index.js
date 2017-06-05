@@ -1,3 +1,4 @@
+
 const personForm = document.querySelector('#personForm')
 
 function handleSubmit(e) {
@@ -9,8 +10,6 @@ function handleSubmit(e) {
     color.className = 'cool-stuff'*/
     document.body.style.backgroundColor = f.colorName.value;
 }
-
-//Test
 
 personForm.addEventListener('submit', handleSubmit)
 
