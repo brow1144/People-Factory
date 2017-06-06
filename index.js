@@ -36,6 +36,19 @@ function handleSubmit(e) {
             button[i].style.backgroundColor = "#585858";
         }
     }
+
+
+    
+    // const details = document.querySelector('#details')
+    // const name = f.personName.value
+
+    // const boldedName = document.createElement('strong-')
+    // boldedName.textContent = name
+
+    // details.appendChild(boldedName)
+
+
+
     const paragraphDiv = document.getElementById('paragraphDiv')
     paragraphDiv.style.borderColor = "#585858"
 

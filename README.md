@@ -14,6 +14,7 @@
 
 * Change the apperange of the paragraph (think css) based on value from the form
 
+## Day 2 Lab
 
 
 
