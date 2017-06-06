@@ -1,5 +1,14 @@
 const personForm = document.querySelector('#personForm')
 
+function renderColor(color) {
+  const div = document.createElement('div')
+  div.style.backgroundColor = color
+  div.style.width = '100px'
+  div.style.height = '50px'
+
+  return div
+}
+
 function handleSubmit(ev) {
   ev.preventDefault()
   const f = ev.target
@@ -8,49 +17,26 @@ function handleSubmit(ev) {
   const favoriteColor = f.favoriteColor.value
   const age = f.age.value
 
-  // const colorDiv = `
-  //   <div style="background-color: ${favoriteColor}; width: 100px; height: 50px;"></div>
-  // `
   
   // const boldedName = document.createElement('strong')
   // boldedName.textContent = name
   // details.appendChild(boldedName)
 
-  
-  //   details.innerHTML = `
-  //     <ul>
-  //       <li>Name: ${name}</li>
-  //       <li>Favorite Color: ${colorDiv}</li>
-  //       <li>Age: ${age}</li>
-  //     </ul>
-  //     `
+  const nameItem = document.createElement('li')
+  nameItem.textContent = `Name: ${name}`
 
-    function addCustomList() {
-        const uList = document.createElement('ul')
+  const colorItem = document.createElement('li')
+  colorItem.innerHTML = `Favorite Color: ${renderColor(favoriteColor).outerHTML}`
 
-        const l1Item = document.createElement('li')
-        l1Item.textContent = `Name: ${name}`
-        
-        const l2Item = document.createElement('li')
-        l2Item.textContent = `Favorite Color: `
-        const colorDiv = document.createElement('div')
-        colorDiv.style.backgroundColor = `${favoriteColor}`
-        colorDiv.style.width = '100px';
-        colorDiv.style.height = '50px'
-        l2Item.appendChild(colorDiv)
+  const ageItem = document.createElement('li')
+  ageItem.textContent = `Age: ${age}`
 
-        const l3Item = document.createElement('li')
-        l3Item.textContent = `Age: ${age}`
+  const list = document.createElement('ul')
+  list.appendChild(nameItem)
+  list.appendChild(colorItem)
+  list.appendChild(ageItem)
 
-        uList.appendChild(l1Item)
-        uList.appendChild(l2Item)
-        uList.appendChild(l3Item)
-        
-        details.appendChild(uList)
-    }
-
-    addCustomList()
-    
+  details.appendChild(list)
 }
 
 personForm.addEventListener('submit', handleSubmit)
