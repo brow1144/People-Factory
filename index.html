@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+SC|Indie+Flower|Kdam+Thmor|Mogra|Vibur" rel="stylesheet">
     </head>
     <body>
         
@@ -24,11 +25,21 @@
                         <input type="text" name="colorName">
                     </p>
                     <p>
+                        <label for="fontName">Font</label>
+                        <select id="font" name="fontName">
+                            <option value="Vibur">Vibur</option>
+                            <option value="Kdam Thmor">Kdam Thmor</option>
+                            <option value="Mogra">Mogra</option>
+                            <option value="Cormorant SC">Cormorant SC</option>
+                            <option value="Indie Flower">Indie Flower</option>
+                        </select>
+                    </p>
+                    <p>
                         <button type="submit">Go</button>
                     </p>
                 </form>
                 <div id="paragraphDiv">
-                    <h2>Fill out the Form!</h2>
+                    <h2 id="paragraphHeader">Fill out the Form!</h2>
                     <p id="emptyParagraph"></p>
                 </div>
             </div>

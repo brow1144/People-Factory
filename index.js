@@ -27,11 +27,26 @@ function handleSubmit(e) {
     const paragraphDiv = document.getElementById('paragraphDiv')
     paragraphDiv.style.borderColor = "#585858"
 
+    const paragraphHeaer = document.getElementById('paragraphHeader')
+    paragraphHeaer.textContent = ""
+
     const emptyParagraph = document.getElementById('emptyParagraph')
-    emptyParagraph.textContent = 'Wow! your favorite color is ' + f.colorName.value + 
-                                 '! Thats not quiet as cool as green but I guess its alright.' +
+    if (f.colorName.value == "green" || f.colorName.value == "Green") {
+        emptyParagraph.textContent = 'Wow! Your favorite color is ' + f.colorName.value + 
+                                 '! Thats is the best color in the world so good job on having the correct opinion' +
                                  ' Could you tell that my favorite color is green by the colors on the main page?!'
+    } else {
+        emptyParagraph.textContent = 'Wow! your favorite color is ' + f.colorName.value + 
+                                     '! Thats not quiet as cool as green but I guess its alright.' +
+                                     ' Could you tell that my favorite color is green by the colors on the main page?!'
+    }
     
+    const dropDown = document.getElementById('font')
+    const optionValue = dropDown.options[dropDown.selectedIndex].value;
+    
+    document.body.style.fontFamily = optionValue
+
+
 }
 
 personForm.addEventListener('submit', handleSubmit)

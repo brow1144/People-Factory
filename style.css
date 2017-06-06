@@ -25,6 +25,18 @@ input[type=text]:focus {
     outline: none;
 }
 
+select {
+    width: 18%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+select:focus {
+    outline: none;
+}
+
 button[type=submit] {
     background-color: #FF9009;
     border: none;
