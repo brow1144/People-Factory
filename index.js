@@ -54,6 +54,8 @@ function handleSubmit(e) {
     
     document.body.style.fontFamily = optionValue
 
+    const selectBox = document.getElementById('font')
+    selectBox.style.fontFamily = optionValue
 
 }
 
