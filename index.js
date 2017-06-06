@@ -41,7 +41,7 @@ function handleSubmit(e) {
     const emptyParagraph = document.getElementById('emptyParagraph')
     if (f.colorName.value == "green" || f.colorName.value == "Green") {
         emptyParagraph.textContent = 'Wow! Your favorite color is ' + f.colorName.value + 
-                                 '! Thats is the best color in the world so good job on having the correct opinion' +
+                                 '! Thats is the best color in the world so good job on having the correct opinion!' +
                                  ' Could you tell that my favorite color is green by the colors on the main page?!'
     } else {
         emptyParagraph.textContent = 'Wow! your favorite color is ' + f.colorName.value + 
