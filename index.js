@@ -13,6 +13,10 @@ function handleSubmit(e) {
         return false    
     }
 
+    if (f.colorName.value == "Yellow" || f.colorName.value == "yellow") {
+        document.body.style.color = "black"
+    }
+
     heading.textContent = f.personName.value + 's favorite color is ' + f.colorName.value
 
     document.body.style.backgroundColor = f.colorName.value
