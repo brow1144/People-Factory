@@ -2,9 +2,17 @@
 const personForm = document.querySelector('#personForm')
 
 function handleSubmit(e) {
+    
     e.preventDefault()
     const f = e.target
+
     const heading = document.querySelector('h1')
+
+    if (heading.textContent == "" || f.colorName.value == "") {
+        alert('Please fill out the form before submitting!')
+        return false    
+    }
+
     heading.textContent = f.personName.value + 's favorite color is ' + f.colorName.value
 
     document.body.style.backgroundColor = f.colorName.value
@@ -40,7 +48,7 @@ function handleSubmit(e) {
                                      '! Thats not quiet as cool as green but I guess its alright.' +
                                      ' Could you tell that my favorite color is green by the colors on the main page?!'
     }
-    
+
     const dropDown = document.getElementById('font')
     const optionValue = dropDown.options[dropDown.selectedIndex].value;
     
