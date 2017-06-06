@@ -14,8 +14,10 @@
 
 * Change the apperange of the paragraph (think css) based on value from the form
 
-## Day 2 Lab
+## Day 2 LAB
 
+* Add form values to `.details` using `document.createElement` and `appendChild`, instead of `innerHTML`.
+* Break out some of this functionality into a separate function.
 
 
 
