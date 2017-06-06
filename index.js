@@ -20,12 +20,18 @@ function handleSubmit(e) {
 
     const button = document.getElementsByTagName('button')
     for(var i = 0; i < button.length; i++) {
-        if(button[i].type == "submit") {
+        if(button[i].type == 'submit') {
             button[i].style.backgroundColor = "#585858";
         }
     }
+    const paragraphDiv = document.getElementById('paragraphDiv')
+    paragraphDiv.style.borderColor = "#585858"
 
-
+    const emptyParagraph = document.getElementById('emptyParagraph')
+    emptyParagraph.textContent = 'Wow! your favorite color is ' + f.colorName.value + 
+                                 '! Thats not quiet as cool as green but I guess its alright.' +
+                                 ' Could you tell that my favorite color is green by the colors on the main page?!'
+    
 }
 
 personForm.addEventListener('submit', handleSubmit)

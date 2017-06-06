@@ -40,3 +40,14 @@ button[type=submit] {
 button[type=submit]:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+#paragraphDiv {
+    border: 2px solid green;
+    margin: 0 auto;
+    width: 50%;
+    height: 200px;
+}
+
+#emptyParagraph {
+    padding: 0 20px 0 20px;
+}
