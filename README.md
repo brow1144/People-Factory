@@ -2,7 +2,7 @@
 
 ## Day 1 Homework
 
-* Add another input to the form. (Complete)
+* Add another input to the form. <p style='color:red'>This is some red text.</p>
 * Use the Values from both inputs in the 'h1'. (Complete)
 
 ### Super Mega Bonus Credit
